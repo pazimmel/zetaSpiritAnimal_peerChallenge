@@ -28,8 +28,9 @@ function appendToDom(personArray){
     $('#returnData').empty();
     for(var i = 0; i < personArray.length; i++) {
         var $el = ("<p>Name: " + personArray[i].name + " Spirit Animal: " + personArray[i]['Spirit Animal'] + "</p>");
-        $('#returnData').append($el).animate({
-            color: "red"
-        },2000);
+        $('#returnData').append($el);
+        //$("#returnData").children().animate({
+        //    opacity : 0
+        //},2000);
     }
 }
